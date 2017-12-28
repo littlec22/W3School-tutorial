@@ -1,0 +1,321 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width:100%;
+   background-image: url(carlpoooooo/Savin-NY-Website-Background-Web.jpg);
+       background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+       
+}
+#headerBar{
+    width:100%;
+    height:80px;
+    background-color:#ecf0f1;
+    position: fixed;
+    box-shadow: 2px 0px 30px;
+ 
+    
+}
+
+#headerTagname{
+    width: 70%;
+    height:80px;
+    float: left;
+    
+}
+
+#headerTagname #CSS{
+    font-family: segoe ui;
+    font-weight: normal;
+    font-size:50px;
+    margin-left: 40px;
+    width: 300px;
+    float: left;
+    color: black;
+}
+#headerTagname p{
+    font-family: segoe ui;
+    font-size:20px;
+    margin-left: 0px;
+    margin-top: 10px;
+    float:left;
+}
+#headercreatorname img{
+    font-family:     segoe ui;
+    font-size:100%;
+    margin-right: 20px;
+   
+    float: right;
+}
+
+
+
+#headercreatorname {
+    width: 30%;
+    float: left;
+    
+}
+
+
+
+/*for mobile button */
+#mobileButton{
+    width:50px;
+    height:50px;
+   
+    float:left;
+    display: none;
+}
+#mobileButton a img{
+    margin-leftf: 30px;
+   
+}
+
+
+
+
+/*for the main container proterties*/
+#titleofContent{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family:sans-serif;
+    font-weight: 400;
+}
+#backtotop{  
+    font-family:sans-serif;
+    font-weight: 400;
+    font-size:20px;
+    color:black;
+}
+  #backtotop:hover{  
+    color: brown;
+}
+#content{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 93%;
+    font-family:segoe ui;
+    font-size: 16px;
+     border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+#mainContainer{
+ 
+    width:80%;
+    
+    height:auto;
+    margin-left: 20%;
+    background-image: url(carlpoooooo/WDF_1534761.jg);
+    float:left;
+  
+}
+
+.contentBox{
+    display: none;
+    overflow: hidden;
+}
+#mainContainer ul{
+    margin-left: 40px;
+}
+#mainContainer img{
+    box-shadow: 5px 5px 20px;
+    border: 1px solid cyan;
+}
+/*targeting menu*/
+#selectionMenu:target{
+   animation:myanimation1 1s;
+    overflow-y: scroll;
+    height:300px;
+    width: 100%;
+}
+#allContainer:target #selectionMenu{
+   animation:myanimation2 1s;
+    overflow-y: hidden;
+    height:0px;
+    width: 100%;
+}
+#allContainer:target #inspirationQoutes, #selectionMenu:target ul #closeselection{
+ display: block;
+}
+#inspirationQoutes:target{
+    display: block;
+}
+code{
+    background: dimgray;
+    color: white;
+    font-family: courier new;
+}
+
+/* selection menu css*/
+/*for selection Button*/
+#selectionMenu{
+    width:20%;
+    height:86%;
+    background-color: transparent;
+    float:left;
+    margin-top: 80px;
+    position: fixed;
+    overflow-y: scroll;
+   background: #273746;
+    
+}
+
+
+
+#selectionMenu ul{
+  
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    font-family: segoe ui;
+    font-size: 20px;
+    
+    
+}
+#selectionMenu ul li a{
+    width: 90%;
+    padding-left: 10%;
+  text-decoration:none;
+   display: block;
+     font: normal segoe ui;
+    color:white;
+    border-bottom: 1px solid #787d7d;
+}
+#selectionMenu ul  #closeselection{
+    background-color: white;
+   
+   display: none;
+}
+
+#selectionMenu ul li:hover{
+  padding-left:3%;
+    width: 97%;
+    
+    background-color:white;
+   
+        
+}
+#selectionMenu ul li:hover a{
+  color: black;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+/*for responsive queiry*/
+@media (min-width: 550px )and (max-width: 900px) {
+    #headerBar{height:140px;position: relative;}
+    #mobileButton{display:block;margin-left: 20px;}
+    #selectionMenu{height:0px;position: relative;margin-top: 0px;}
+    #mainContainer{width:100%;margin-left: 0px;}
+    #marginTop80{margin-top: 0px;}
+    #headerTagname p{float:left;}
+    #headercreatorname{display: none;}
+    #headerTagname{width: 90%;}
+    #headerTagname #CSS{font-size: 40px;margin-left:30px;;position: relative; ;margin-top: 10px;width:220px;}
+    #mobileButton a img{ margin-top: 15px;margin-left: 0px;}
+     #tutorialImage{width:80%;margin-left:5%;margin-right: 10%;}
+}
+
+@media (min-width: 200px) and (max-width: 550px) {
+    #headerBar{height: 70px;position: relative; margin-bottom: 0px;}
+    #mobileButton{display:block;margin-top: 0px;}
+     #selectionMenu{height:0px;;position: relative;margin-top: 0px;}
+    #mainContainer{width:100%;margin-left: 0px;margin-top: 0px;float:left;}
+    #tutorialImage{width:80%;margin-left:5%;margin-right: 10%;}
+    #marginTop80{margin-top: 0px;}
+    #headerTagname p{display: none;}
+    #headercreatorname{display: none;}
+    #headerTagname{width: 80%;}
+    #headerTagname #CSS{font-size: 30px;margin-left:0px; ;position: relative; ;text-align: center;margin-top: 10px;width: 100%;font-weight:600;}
+    #mobileButton a img{margin-top: 8px;margin-left: 0px;}
+    
+    
+    
+}
+
+/*animation*/
+@-webkit-keyframes myanimation1{
+	0%{
+		height:0px;
+	}
+	100%{
+		height:300px;}}
+@keyframes myanimation1{
+	0%{
+		height:0px;
+	}
+	100%{
+		height:300px;}}
+
+@-webkit-keyframes myanimation2{
+	0%{
+        height:300px;}
+	100%{
+		height:0px;}
+}
+@keyframes myanimation2{
+	0%{
+        height:300px;}
+	100%{
+		height:0px;}
+}
+
+@-webkit-keyframes myanimation3{
+    
+	0%{
+        opacity: 0;
+		
+	}
+	100%{
+       opacity: 1;
+		}
+}
+
+@keyframes myanimation3{
+	0%{
+        opacity: 0;
+		
+	}
+	100%{
+       opacity: 1;
+		}
+}
+
+
+
+/*targeting the sidenavigatiton*/
+#csshome:target,#cssintro:target,#csssyntax:target,#csshowto:target,#csscolors:target,#cssbackground:target,#cssborders:target,#cssmargins:target,#csspadding:target,#cssheight:target,#csstext:target,#cssfonts:target,#csslists:target{
+   display: block;
+   
+    animation: myanimation3 2s;
+    height: auto;
+    
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+     border: 1px solid black;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+
